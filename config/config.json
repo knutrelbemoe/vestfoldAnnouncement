@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "annoucement-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/annoucement/AnnoucementWebPart.js",
+          "manifest": "./src/webparts/annoucement/AnnoucementWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AnnoucementWebPartStrings": "lib/webparts/annoucement/loc/{locale}.js"
+  }
+}

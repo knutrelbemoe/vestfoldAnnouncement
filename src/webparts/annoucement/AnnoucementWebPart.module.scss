@@ -1,0 +1,148 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.annoucement {
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+    padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+  
+}
+.mnHeader{
+  padding: 5px 5px;
+  border-bottom: 1px solid #a9a6a6;
+  h4 {
+    margin: 0;
+  }
+}
+.btnCustom {
+  padding: 3px 5px;
+    display: flex;
+    line-height: 22px;
+    background: #5dc6bf;
+    margin-top: 5px;
+    width: 180px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #242222;
+    i {
+      margin-right: 4px;
+    }
+}
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 3px 0;
+  &:nth-child(odd) {
+    background: aliceblue;
+  }
+  .mediabody {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    h5 {
+      margin: 0;
+      a {
+        color: #33adad;
+        text-decoration: none;
+        /* BACKGROUND: #ededed; */
+        padding: 2px 0px;
+        display: block;
+      }
+    }
+    p {
+      font-size: 88%;
+      margin: 0;
+    }
+  }
+  .icHolder {
+    width:50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    margin-right: 8px;
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+    color: #fff;
+    align-items: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+.alignSelfCenter {
+  -ms-flex-item-align: center!important;
+  align-self: center!important;
+}
+
